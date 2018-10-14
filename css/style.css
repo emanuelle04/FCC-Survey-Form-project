@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css?family=Bahiana|Bungee+Hairline|Chathura|Saira+Condensed');
+
+#centro{
+  display: flex;
+  background:white;
+  color: white;
+  flex-direction: column;
+  margin-top: -10%;
+  margin-left: -0%;
+  margin-right: 10%;
+  margin-bottom: -10%;
+}
+.text-input{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-align: right;
+  background: #519972;
+}
+.text-input label{
+  width: 10%;
+  padding-right: 3%;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: 'Chathura', sans-serif;
+  font-size: 18px;
+}
+.text-input input{
+  width: 100%;
+  font-family: 'Chathura', sans-serif;
+  font-size: 18px;
+}
+
+#perguntas{
+  display: flex;
+  flex-direction: column;
+  margin: 2% 20% 2% 20%;
+}
+.opcoes{
+  display: flex;
+  flex-direction: column;
+ align-items: flex-stretch;
+  border: 1px solid black;
+  margin-left: -25%;
+  margin-right: -25%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 3px;
+   border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: 2px solid #E6FFC4;
+  background-color: #E6FFC4;
+}
+
+.opcoes #dropdown, .opcoes #most-like{
+  width: 70%;
+  background: white;
+  margin-left: 10%;
+  margin-right: 0%;
+  font-size: 16px;
+  boder-radius: 10px;
+  font-family: 'Saira Condensed', sans-serif;
+}
+
+.opcoes #dropdown:hover, .opcoes #most-like:hover{
+  background: #C0EF9B;
+}
+#ul1{
+ width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-align: left;
+  
+}
+
+#ul1 li{
+  list-style-type: none;
+  font-family: 'Saira Condensed', sans-serif;
+}
+#folha1{
+  border-radius: 50px;
+  width: 30px;
+  position: absolute;
+  z-index: -1;
+}
+input[type="radio"]{
+  width: 30px;
+  height: 30px;
+}
+
+#atras , #atras2{
+  background: white;
+   margin: 3% 10% 3%;
+  border-radius: 10px;
+  text-align: left;
+  width: 18.90%;
+}
+#atras{
+  border: 1px solid #9CFC97;
+}
+#atras2{
+  border: 1px solid #F7833B;
+}
+
+#lado, #lado2, #lado3, #lado4{
+ position: relative;
+ float: left;
+  margin-right: 5px;
+ width: 30px;
+  border-radius: 50%;
+}
+
+#q1, #q2, #q3, #q4, #q5 {
+ font-family: 'Bahiana', cursive;
+ font-size: 20px;
+ width: 60%; 
+  margin-top: 5%;
+ margin-left: 20%;
+ margin-right: 20%;
+}
+form{
+  margin: 20% 20% 20% 20%;
+}
+#preferences{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 0%;
+  font-family: 'Saira Condensed', sans-serif;
+}
+
+#final{
+ width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-align: left;
+  background: #A2D868;
+}
+#final textarea{
+  width: 90%;
+}
+#final label{
+  font-family: 'Arial', sans-serif;
+  font-size: 12px;
+  width: 10%;
+   padding-left: -5px;
+}
+button{
+  width: 50%;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 5%;
+  font-size: 20px;
+  border-radius: 15px;
+  font-family: 'Bahiana', cursive;
+  background-color: #519972;
+}
+#l1{
+  dislay: flex;
+  flex-direction: column;
+  float: left;
+  margin-top: 11%;
+  border: 1px solid #E6FFC4;
+  width: 16%;
+  text-align: center;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: #E6FFC4;
+}
+#l1 p{
+  font-family: 'Saira Condensed', sans-serif;
+}
+#globo{
+  positon: absolute;
+  width:60%;
+  z-index: -1;
+  border-radius: 50%;
+  margin-left: 5%;
+}
+h1{
+  position: block;
+  margin-top: 7%;
+  font-family: 'Bahiana', cursive;
+}
+#tudo{
+  margin: 0% 20% 0%;
+  border: 2px dotted gray;;
+  border-left: 4px dotted green;
+  border-top: 2px dotted gray;
+}
+@media only screen and (max-width: 600px) {
+    #preferences{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 0%;
+}
+  #l1{
+    display: block;
+    position: relative;
+    margin: 0% 0% 0%;
+    width: 100%;
+    border: 1px solid transparent;
+  }
+  #l1 p {
+    font-family: 'Saira Condensed', sans-serif;
+  }
+  #tudo{
+    psotion: relative;
+    margin-top: 40%;
+    margin-left: 0%;
+    margin-right: 0%;
+    }
+    #centro{
+  display: flex;
+  background:white;
+  color: white;
+  flex-direction: row;
+
+  }
+  form{
+    margin-right: 0%;
+  }
+  h1{
+    position: block;
+    margin-top: -15%;
+  }
+  #l1 p{
+    margin-left: 17%;
+    margin-right: 5%;
+    margin-top: 3%;
+    margin-bottom: -4%;
+  }
+  #globo{
+    width: 20%;
+    margin-left: -60%;
+    margin-right: 5%;
+  }
+  .text-input label{
+  width: 10%;
+  padding-right: 3%;
+  margin-left: 5%;
+  margin-right: 20%;
+}
+.text-input input{
+  width: 90%;
+}
+  input[type="radio"]{
+    width: 15%;
+  }
+  button{
+    font-size: 20px;
+    width: 60%;
+  }
+  #final{
+ width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #A2D868;
+   border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+  textarea{
+    width: 99px;
+  }
+  .opcoes #dropdown, .opcoes #most-like{
+  width: 90%;
+  background: white;
+  margin-left: 0%;
+  margin-right: 0%;
+  font-size: 16px;
+  boder-radius: 10px;
+}
+  
+}
+#email, #number, #name {
+  border-bottom: 1px dashed white;
+}
+.text-input{
+  border-bottom: 1px dashed white;
+}
+footer{
+  font-family: 'Chathura', sans-serif;
+  font-size: 28px;
+}

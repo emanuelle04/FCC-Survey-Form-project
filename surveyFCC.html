@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>FCC: Survey Form</title>
+  
+  
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div id="l1">
+  <img src="https://4.bp.blogspot.com/-x8GQP_wvS3Y/W8IcRhT1OBI/AAAAAAAAEE0/fkbxsYJzGtUsyGKCX5wP-3hQg2oUtOWbACLcBGAs/s1600/plaa.png" id="globo">
+  <h1 id="title">Ecological Survey</h1>
+ <p id="description">Some questions about your habits in relation to the environment.</p>
+</div>
+
+<h2> <br></h2>
+<div id="tudo">
+
+<div id="centro">
+  <form id="survey-form">
+    <div class="text-input">
+        <label id="name-label" for="name"> **NAME </label>
+      
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+    </div>
+
+    <div class="text-input">
+        <label id="email-label" for="email">**EMAIL </label>
+      
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+    </div>
+    <div class="text-input">    
+    <label id="number-label" for="age">***AGE </label>
+      
+        <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+    </div>
+    </div>
+    
+  
+  
+  
+  <!----Peguntas -->
+  
+  
+  
+  <div id="perguntas">
+  
+  <div class="opcoes">
+        <label for="currentPos" id="q1"><img src="https://1.bp.blogspot.com/-beA6YVWDpnQ/W8IcQbVBIzI/AAAAAAAAEEg/rZCEOCElYSE5ZwdcKmR9yWprHsAaLSSFACLcBGAs/s1600/arv.png" id="lado">How do you define yourself in relation to environmental preservation?</label>
+      
+        <select id="dropdown" name="ownView" class="dropdown">
+      <option disabled value>Select an option</option>
+      <option  value="nothing">I do not know anything about.</option>
+      <option value="little">I know little and I do not apply in my day to day.</option>
+      <option value="learner">I know enough and I try to apply in my day to day.</option>
+      <option value="research">I like to research and create positive habits in relation to the environment.</option>
+      <option value="neutral">Neutral.</option>
+    </select>
+    </div>
+    
+    <div class="opcoes">
+        <label for="userRating" id="q3"><img src="https://4.bp.blogspot.com/-8ngJ0Gq3t8E/W8IcQTxRABI/AAAAAAAAEEk/NS8i6x7SU2wHrOPqWjVGtIF4Ax-TqU7wQCLcBGAs/s1600/aaaasdfs.png" id="lado3">Do you own plants at your home?</label>
+     
+        <ul id="ul1">
+          <div id="atras">
+          <li  class="sim"><input name="radio-buttons" value="1"  type="radio" class="userRatings" class="sim" onclick="document.getElementById('atras').style.backgroundColor = '#9CFC97'; document.getElementById('atras2').style.backgroundColor = 'white'">YES</li>
+          </div>
+         <div id="atras2"> <li class="nao"><input name="radio-buttons" value="2"  type="radio" class="userRatings" class="nao" onclick="document.getElementById('atras2').style.backgroundColor = '#F7833B'; document.getElementById('atras').style.backgroundColor = 'white'">NO</li></div>
+        </ul>
+    </div>
+    
+    
+    
+     <div class="opcoes" >
+     
+        <label for="preferences" id="q4"><img src="https://3.bp.blogspot.com/-glKYcIziDjk/W8IcRFNeecI/AAAAAAAAEEs/K-4BFl_YxvYA16-Fmyy_ClS8OCWI8yXRgCLcBGAs/s1600/eeee.png" id="lado4">Things that you think you could apply on your daily life<br>(Check all that apply): </label>
+     
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Separate recyclable waste.</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Save water.</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Reuse safe packaging.</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Cloth bags instead of plastic.</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">
+Conscious consumption of organic matter.</label></li>
+          <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Energy saving.</label></li>
+          <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Reuso de plástico.</label></li>
+          <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">No waste of food.</label></li>
+          <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">Use of recycled material.</label></li>
+
+        </ul>
+    </div>
+     <div id="final">
+        <label for="comments" id="q5">Comments</label>
+      
+      
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+     </div>
+    <button id="submit" type="submit" onclick="alert('Thank you for help!');">Submit</button>
+    
+  </div>
+
+  </form>
+</div>
+
+<footer> By Emanuelle Rodrigues <a href="https://fazerdiferen-a.tumblr.com/" target="_blank"><img src="https://image.freepik.com/free-icon/tumblr_318-136396.jpg" style="width: 3%; border-radius: 50%;"></a>
+    <a href="https://www.instagram.com/manu.hhh/" target="_blank"> <img src="https://image.freepik.com/free-vector/instagram-icon_1057-2227.jpg" style="width: 3%; border-radius: 50%;"></a>
+    <a href="https://github.com/emanuelle04" target="_blank"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSloPh66j0ZUohjz-jovlmXoUlXu02AYW2_x7QAUfuVWuS_XBc_" style="width:3%; border-radius: 50%;"></a>
+    <a href="https://www.freecodecamp.org/emanuelle" target="_blank"><img src="https://secure.meetupstatic.com/photos/event/4/c/b/b/600_468259643.jpeg" style="width: 3%; border-radius: 50%;"></a>
+  </footer>
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+
+  
+
+</body>
+
+</html>
